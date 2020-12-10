@@ -1,0 +1,115 @@
+.home {
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+    .home__child {
+        margin: auto;
+        font-size: 8rem !important;
+        font-weight: bolder !important;
+        color: red;
+        padding-left: 100px;
+        vertical-align: middle !important;
+        max-width: 600px !important;
+        min-width: 250px !important;
+        position: absolute;
+        top: 10%;
+        @media screen and (max-width: 768px) {
+            padding-left: 10px !important;
+        }  
+        div{
+            min-height: 50px !important;
+            @media screen and (max-width: 768px) {
+                height: 130px;
+                padding-left: 30px !important;
+            }
+            @media screen and (max-width: 368px) {
+                height: 80px !important;
+                padding-left: 10px !important;
+            }
+            span {
+                @media screen and (max-width: 768px) {
+                    font-size: 80px;
+                    line-height: 40px;
+                    padding-left: 30px !important;
+                }  
+                @media screen and (max-width: 368px) {
+                    font-size: 50px;
+                    line-height: 20px;
+                    padding-left: 10px !important;
+                }
+            } 
+        }
+        
+        
+        a {
+            color: red !important;
+        }
+        
+        #compi, #comp-i {
+            color: white !important;
+            a {
+                color: white !important;
+            }
+        }
+
+        .home-comps {
+            display: inline !important;
+            background-color: transparent !important;
+            overflow: hidden;
+            animation: from-btm 1s !important;
+                @keyframes from-btm {
+                    from {
+                        bottom: -5%;
+                    }
+                    to {
+                        bottom: 0%;
+                    }
+                }
+            &:hover {
+                z-index: 200;
+                padding-left: 20px;
+                animation: from-left .7s !important;
+                @keyframes from-left {
+                    from {
+                        margin-left: 5%;
+                    }
+                    to {
+                        margin-left: 0%;
+                    }
+                }
+            }
+        }
+        .hidden-i {
+            display: none !important;
+        }
+    }
+    .home-side-img {
+        width: auto;
+        height: 100vh !important;
+        float: right;
+        @media screen and (min-width: 769px) {
+            padding-right: 70px;
+        }
+        @media screen and (max-width: 768px) {
+            width: auto;
+            height: 80vh !important;
+        }
+        @media screen and (max-width: 368px) {
+            width: auto;
+            height: 60vh !important;
+        }
+    }
+    .resp-btm-txt{
+        display: none !important;
+        text-align: center;
+        position: fixed !important;
+        margin-bottom: 20px !important;
+        z-index: 2000;
+        @media screen and (max-width: 768px) {
+            display: contents !important;
+        }
+        @media screen and (max-width: 368px) {
+            display: contents !important;
+        }
+    }
+}
